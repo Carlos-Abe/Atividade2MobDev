@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
   },
   planetImage: {
     width: '100%',
-    height: 100,
+    height: 300,
     borderRadius: 10,
   },
   detalhes: {
