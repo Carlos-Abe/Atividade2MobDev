@@ -80,8 +80,6 @@ export default function App() {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Detalhes</Text>
-      
-      {/* Card Principal */}
       <View style={styles.cardPrincipal}>
         <Image source={require('./assets/sistema_solar.png')} style={styles.mainImage} />
         <View style={styles.textContainer}>
@@ -91,17 +89,12 @@ export default function App() {
           </Text>
         </View>
       </View>
-
-      {/* Informações Extras */}
       <View style={styles.infoBox}>
         <Text style={styles.infoText}>Idade: 4,6 bilhões de anos</Text>
         <Text style={styles.infoText}>Planetas: 8</Text>
         <Text style={styles.infoText}>Estrela: Sol</Text>
       </View>
-
       <Text style={styles.subtitle}>Planetas</Text>
-
-      {/* Lista de Planetas */}
       <FlatList
         data={planetas}
         keyExtractor={(item) => item.id}
